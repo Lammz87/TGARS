@@ -1,0 +1,372 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(38, 81, 95) 0%, rgba(38, 81, 95) 100%);
+  box-shadow: 50px 50px 50px 50px inset #26515f;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  background-color: #18323a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: auto;
+  height: auto;
+  width: auto;
+}
+ul {
+  margin-top: 10px;
+}
+.social-networks ul {
+  text-align: center;
+  bottom: 0;
+  margin: auto;
+}
+.social-networks {
+  text-align: center;
+  display: inline;
+  transform: translateX(-50%);
+  margin: auto;
+  padding: 0;
+  z-index: 999; /* Ensure it's above the .showcase */
+}
+
+.social-networks li {
+  text-align: center;
+  font-size: 15px;
+  display: inline;
+  margin-left: 20px;
+}
+
+.social-networks a {
+  font-size: 20px;
+  color: #f7f5f3;
+  text-align: center;
+}
+
+.social-networks i:hover {
+  color: teal;
+}
+footer {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  color: #c4c4c4;
+  margin-bottom: 1px;
+  margin-top: 50px;
+}
+h2 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 19px;
+  color: #c4c4c4;
+  margin-bottom: 1px;
+  margin-left: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.tokenomics {
+  font-size: 3em;
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  color: #c4c4c4;
+  margin-top: 40px;
+  padding-top: 1px;
+}
+.marketing {
+  font-size: 2em;
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  color: #c4c4c4;
+  margin: auto;
+  width: auto;
+}
+.wallet {
+  text-align: center;
+  margin: 10px;
+}
+.centered-container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+audio {
+  display: block;
+  margin: 0 auto 20px;
+  width: 100%; /* Full width */
+  max-width: 300px; /* Max width */
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #26515f; /* Background color of controls */
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-volume-control-container {
+  color: #c4c4c4; /* Color of the control buttons and text */
+}
+
+span {
+  margin: auto;
+  padding-top: 0;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  color: #c4c4c4;
+  text-decoration: underline;
+}
+
+p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #c4c4c4;
+  margin: auto;
+}
+
+ul {
+  padding: 0;
+}
+
+.list-items {
+  display: inline;
+}
+
+.list-items a {
+  margin: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: none;
+  font-family: "Rajdhani", sans-serif;
+  color: #c4c4c4;
+  font-size: 2.5em;
+}
+
+.list-items a:hover {
+  color: white;
+  border-bottom: 2px solid teal;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 600px;
+  grid-column: 1;
+}
+
+.hero-text {
+  padding: 30px;
+  grid-column: 2;
+  border: 2px solid #18323a;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
+}
+
+.hero-text,
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-text,
+p {
+  font-size: 2rem;
+  margin-top: 10px;
+  font-family: "Rajdhani", sans-serif;
+  text-align: center;
+  color: #c4c4c4;
+}
+
+.charts {
+  width: 100%;
+  margin: 3px;
+  border: 2px solid white;
+}
+
+.row {
+  margin-top: 30px;
+}
+/* Footer */
+
+.dex:hover {
+  color: teal;
+}
+/* Blog Posts */
+/* Define your custom CSS variables */
+
+
+.card {
+  border: none;
+  background-color:rgba(38, 81, 95, 1) !important; /* Override Bootstrap's card background */
+}
+
+.middle {
+  padding: 40px;
+  height: auto;}
+
+.posts {
+  margin-bottom: 50px;
+}
+
+.blog-post {
+  margin: 0 auto;
+  padding: 30px;
+  width: 500px;
+  background-color: #18323a;
+  border-radius: 10px;
+}
+
+.blog-post form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-large {
+  width: auto;
+  height: 150px;
+  font-size: 20px;
+  background-color:rgba(38, 81, 95, 1);
+  color: white;
+}
+
+.blog-post label {
+  margin: 5px;
+  color: #c4c4c4;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.blog-post input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 20px;
+  box-sizing: border-box;
+  background-color: rgba(38, 81, 95, 1);
+  color: white;
+}
+
+.blog-post input[type="submit"] {
+  width: 100px;
+  height: 50px;
+  margin: 25px auto;
+  padding: 10px 20px;
+  background-color: #c4c4c4;
+  color: #18323a;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  border-color: #222831;
+  cursor: pointer;
+}
+
+.buttons {
+  margin: 30px;
+}
+
+.edit-btn,
+.delete-btn {
+  width: 8rem;
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #18323a;
+  color: #c4c4c4;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+#copyright {
+  flex-grow: 2;
+  position: relative;
+  align-self: flex-end;
+  bottom: 0;
+  text-align: center;
+  color: #c4c4c4;
+  font-weight: 600;
+  font-size: 2rem;
+}
+@media screen and (max-width: 1570px) {
+  .showcase-content h1 {
+    font-size: 6rem;
+    line-height: normal;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+
+  .blog-post label {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 776px) {
+
+  .blog-post {
+    margin: 0 auto;
+    padding: 20px;
+    width: 300px;
+  }
+
+  .blog-post label {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 416px) {
+
+
+  .blog-post {
+    margin: 0 auto;
+    padding: 20px;
+    height: auto;
+    width: auto;
+  }
+
+  .blog-post input[type="text"],
+  .input-large {
+    font-size: 15px;
+  }
+
+  .blog-post input[type="submit"] {
+    width: 70px;
+    height: 35px;
+    font-size: 10px;
+  }
+
+  #footer {
+    height: 30vh;
+  }
+
+  #copyright {
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-bottom: 6px;
+  }
+}

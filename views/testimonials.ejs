@@ -1,0 +1,42 @@
+<%- include("partials/header.ejs") %>
+<div class="middle">
+  <div class="emoji">
+    <p>Post Your Stories!👇</p>
+    <div class="posts">
+      <h2>My Experience With Ryan</h2>
+      <h5><%= currentDate %></h5>
+      <p>
+
+      </p>
+    </div>
+    <% posts.forEach( (post, index)=> { %>
+    <div class="card" id="post_<%= index %>">
+      <h2><%= post.title %></h2>
+      <h5><%= post.date %></h5>
+      <p><%= post.content %></p>
+      <div class="buttons">
+        <button class="edit-btn" onclick="editPost(<%= index %>)">Edit</button>
+        <button class="delete-btn" onclick="deletePost(<%= index %>)">
+          Delete
+        </button>
+      </div>
+    </div>
+    <% }); %>
+    <div class="blog-post">
+      <form id="postForm" action="/posts" method="POST">
+        <label for="title">Post Title:</label>
+        <input type="text" id="btitle" name="btitle" required minlength="3" />
+        <label for="content">Post Content:</label>
+        <textarea
+          class="input-large"
+          id="bcontent"
+          name="bcontent"
+          required
+          minlength="3"
+        ></textarea>
+        <input type="submit" value="POST" />
+      </form>
+    </div>
+  </div>
+</div>
+<%- include("partials/footer.ejs") %>
